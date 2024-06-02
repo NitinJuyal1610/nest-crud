@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "6d6e2207-0970-48d1-9c49-d4eff0e0152c",
+		"name": "catoff",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21567688"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"nitin\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"12545uthsiu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "addWallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"nitin\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"12545uthsiu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users/c08f4415-1689-4f7e-a999-eb571d3e5ae8/wallet"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"nitinupdated2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users/868f5d7a-86f5-4ab3-b3ae-b1dac291d973"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"nitinupdated2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users/868f5d7a-86f5-4ab3-b3ae-b1dac291d973"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"nitin\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"12545uthsiu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		}
+	]
+}
